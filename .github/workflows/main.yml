@@ -1,4 +1,3 @@
-#This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -28,5 +27,4 @@ on:
             env:
               HF: ${{ secrets.HF }}
             run: git push --force https://ByRichardX:$HF@huggingface.co/spaces/ByRichardX/DemoCI2024 main
-    
     
