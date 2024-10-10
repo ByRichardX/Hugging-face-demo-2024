@@ -23,10 +23,10 @@ on:
           - name: Add remote
             env:
               HF: ${{ secrets.HF }}
-            run: git remote add space https://huggingface.co/spaces/ByRichardX/DemoCI2024
+            run: git remote add space https://ByRichardX:$HF@huggingface.co/spaces/ByRichardX/DemoCI2024
           - name: Push to hub
             env:
               HF: ${{ secrets.HF }}
-            run: git push --force https://huggingface.co/spaces/ByRichardX/DemoCI2024 main
+            run: git push --force https://ByRichardX:$HF@huggingface.co/spaces/ByRichardX/DemoCI2024 main
     
     
