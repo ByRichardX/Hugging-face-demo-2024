@@ -20,10 +20,10 @@ jobs:
           fetch-depth: 0
       - name: Add remote
         env:
-          HF_TOKEN: ${{ secrets.HG }}
+          HG: ${{ secrets.HG }}
         run: git remote add space https://ByRichardX:$HG@huggingface.co/spaces/ByRichardX/DemoCI2024
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.HG }}
+          HG: ${{ secrets.HG }}
         run: git push --force https://ByRichardX:$HG@huggingface.co/spaces/ByRichardX/DemoCI2024 main
 
