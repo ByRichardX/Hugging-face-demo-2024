@@ -2,5 +2,5 @@ gradio
 transformers
 tensorflow
 pytest
-pylinpip
+pylin
 tf-keras
